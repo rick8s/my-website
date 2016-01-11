@@ -13,7 +13,7 @@ app.config(['$routeProvider',
         controller: 'HomeCtrl'
       }).
       when('/frameworks', {
-        templateUrl: 'partials/frameworks.html',
+        templateUrl: 'partials/technologies.html',
         controller: 'HomeCtrl'
       }).
       when('/portfolio', {
