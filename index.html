@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>8sPlace</title>
+  <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css"> 
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+
+<body ng-app="8sPlace">
+
+
+<div class="flex-container">
+  <!-- <div ng-controller="PageslideCtrl" class="ng-scope">
+    <div id="navBar"> <a id="navBtn" class="small button glyphicon glyphicon-th-list" href="" ng-click="toggle()"></a>
+       
+        <div pageslide="" ps-open="checked" ps-side="left" class="ng-isolate-scope ng-pageslide" style="z-index: 1000; position: fixed; width: 0px; height: 20%; overflow: hidden; transition-duration: 0.5s; transition-property: width, height:; top: 0px; bottom: 0px; left: 0px;">
+            <div style="padding: 20px; display: none;" id="demo-left">
+                <div class="row" id="nav">
+                  <ul class="nav">
+                    <li class="active"><a href="#">{{ page }}</a></li>
+                    <li><a href="#/home" id="homeNav" ng-click="toggle()"><i>Home</i></a></li>
+                    <li><a href="#/profile" id="profileNav" ng-click="toggle()"><i>Profile</i></a></li>
+                    <li><a href="#/frameworks" id="frameworksNav" ng-click="toggle()"><i>Frameworks</i></a></li>
+                    <li><a href="#/contact" id="contactNav" ng-click="toggle()"><i>Contact</i></a></li>
+                  </ul>
+                </div>
+                <div>
+                <a id="closeNav" ng-click="toggle()" class="button">Close</a>
+            </div>
+            </div>
+        </div>
+
+    </div>               
+  </div> -->
+  <div class= "row" >
+    <div class= "col-md-3">
+      <div class="row" id="name">
+        <img src="img/name.png" alt="Rick Aites" />
+      
+      <div class="selfie" >
+        <img ng-src="img/rick3.jpg" alt="image" />
+      </div>
+    </div>
+      <div class="row"></div>
+        <div class="row" id="nav">
+          <ul class="link">
+            <!-- <li class="active"><a href="#">{{ page }}</a></li> -->
+            <li><a href="#/home" id="homeNav" ng-click="toggle()"><i><h4>Home</h4></i></a></li>
+            <li><a href="#/profile" id="profileNav" ng-click="toggle()"><i><h4>Profile</h4></i></a></li>
+            <li><a href="#/frameworks" id="frameworksNav" ng-click="toggle()"><i><h4>Frameworks</h4></i></a></li>
+            <li><a href="#/portfolio" id="portfolioNav" ng-click="toggle()"><i><h4>Portfolio</h4></i></a></li>
+            <li><a href="#/contact" id="contactNav" ng-click="toggle()"><i><h4>Contact</i></h4></a></li>
+          </ul>
+        </div>
+      </div>
+   
+
+
+  <!--  <p class="name"><h1>Richard Aites</h1></br><h2>Software Developer</h2></p> -->
+        <div class= "col-md-6">
+       <div ng-view> </div>
+       </div>
+    </div> 
+  </div>   
+</div>
+ 
+    
+  
+
+
+
+
+
+
+
+  <script src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="lib/bower_components/angular/angular.min.js"></script>
+  <script src="lib/bower_components/angular-route/angular-route.js"></script>
+  <script src="lib/bower_components/angular-filter/dist/angular-filter.min.js"></script>
+  <script src="lib/bower_components/angularfire/dist/angularfire.min.js"></script>
+  <script src="lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="lib/bower_components/angular-pageslide-directive/dist/angular-pageslide-directive.min.js"></script>
+  <script src="javascripts/app.js"></script>
+  <script src="javascripts/controllers/home.js"></script>
+  <script src="javascripts/controllers/portfolio.js"></script>
+  <script src="javascripts/controllers/pageslide.js"></script>
+</body>
+</html>
