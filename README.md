@@ -1,2 +1,4 @@
-# my-website
-An AngularJS website
+# 8sPlace.com
+### Personal website using AngularJS
+
+
